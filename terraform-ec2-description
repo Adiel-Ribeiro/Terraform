@@ -1,0 +1,29 @@
+Please, modify this file accordingly to your needs! 
+
+It launches EC2 instances following Security Best Practices
+trought IaC model. 
+
+It uses a shared credentials file model wich provides a secure way
+to store usernames, passwords and allows the use of profiles 
+to fine grant user rights access to your AWS account. 
+
+It assumes that you already have A VPC, a Subnet a Security Group and 
+a SSH key pair that should be attached to your EC2 instance. 
+This step ensures the correct networking assignment to your EC2 instance. 
+
+Aditionally it can attach an EC2 instance profile, that can be used 
+to allow EC2 access to AWS resources in a secure way. 
+
+It also attach Volume Tags that can be used in a Backup Strategy and 
+Instance Tags that can be used in a Patch Management Strategy. 
+The Tags are an easy way to manage AWS resources. 
+Here there is a Portuguese video explaining an use case
+of them. 
+https://www.youtube.com/watch?v=A_RMhjRgNWQ
+
+Optionally this file can encrypt your disks. 
+
+Finally: there are some other insteresting options, like detailed monitoring, 
+tenancy, availability zone, instance termination and so on. 
+
+
